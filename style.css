@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#b068e9, #6463e7);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faq-content {
+  background-image: url(./images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31.813rem;
+  width: 57.5rem;
+  padding: 4rem 6rem 29.688rem 29.688rem;
+  border-radius: 1.5rem;
+  box-shadow: 3.125rem 0 3.125rem -1.5rem rgba(100, 99, 231, 0.4972);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2.25rem;
+}
+
+.content {
+  width: 21.875rem;
+  margin: 1.25rem 0 1rem 0;
+}
+
+.content div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#dropdown {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #787887;
+  display: none;
+}
+
+h3 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4b4c5f;
+  transition: 0.4s;
+}
+
+img {
+  margin-right: 1rem;
+  transition: 0.4s;
+}
+
+div .box {
+  position: fixed;
+  top: 45.5%;
+  left: 19%;
+}
+
+h3:hover,
+img:hover {
+  color: #f47b56;
+  cursor: pointer;
+}
+
+#title-bold {
+  font-weight: 700;
+}
+
+hr {
+  margin-top: 1rem;
+  color: #e8e8ea;
+}
+
+#img.active {
+  rotate: 180deg;
+}
+
+#dropdown.active {
+  display: block;
+  transition: 0.4s;
+}
+
+@media (max-width: 375px) {
+  .faq-content {
+    width: 20.438rem;
+    height: 33.438rem;
+  }
+}
